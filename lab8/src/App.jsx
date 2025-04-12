@@ -7,6 +7,8 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import RecipeOfDay from "./components/RecipeOfDay";
 import SummerRecipes from "./components/SummerRecipes";
 import VideoRecipes from "./components/VideoRecipes";
+import EditorsPick from "./components/EditorsPick";
+
 function App() {
   return (
     <Router>
@@ -16,6 +18,7 @@ function App() {
         <div style={{ marginTop: "-100px", position: "relative", zIndex: 1 }}>
           <SummerRecipes />
           <VideoRecipes />
+          <EditorsPick />
         </div>
       </div>
     </Router>

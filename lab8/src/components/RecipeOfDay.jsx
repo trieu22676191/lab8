@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Selection from "../img/Selection.png";
+import Ava from "../img/ava.png";
 
 const RecipeOfDay = () => {
   return (
@@ -88,7 +89,7 @@ const RecipeOfDay = () => {
           {/* Author Section */}
           <div className="d-flex flex-column align-items-center mb-4">
             <img
-              src={Selection}
+              src={Ava}
               alt="Author"
               className="rounded-circle mb-2"
               style={{ width: "48px", height: "48px", objectFit: "cover" }}
