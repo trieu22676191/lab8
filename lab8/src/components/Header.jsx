@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Container, Nav, Form, Button } from "react-bootstrap";
+import logo from "../img/logo_header.png";
 
 const Header = () => {
   return (
@@ -9,12 +10,7 @@ const Header = () => {
       <Container>
         {/* Logo */}
         <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
-          <img
-            src="src/img/logo_header.png"
-            alt="Chefify Logo"
-            height="32"
-            className="me-2"
-          />
+          <img src={logo} alt="Chefify Logo" height="32" className="me-2" />
         </Navbar.Brand>
 
         {/* Search Bar */}

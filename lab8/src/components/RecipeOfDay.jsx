@@ -7,11 +7,9 @@ const RecipeOfDay = () => {
   return (
     <div
       style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
+        position: "relative",
+        height: "100vh",
+        width: "100%",
         overflow: "hidden",
       }}
     >
@@ -24,24 +22,25 @@ const RecipeOfDay = () => {
           width: "100%",
           height: "100%",
           backgroundImage: `url(${Selection})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundSize: "contain",
+          backgroundPosition: "right center",
           backgroundRepeat: "no-repeat",
+          backgroundColor: "#f8f9fa",
         }}
       />
 
-      <div
-        className="container h-100 d-flex align-items-center"
-        style={{ position: "relative" }}
-      >
+      <div className="container h-100 position-relative">
         {/* Recipe Card */}
         <div
           className="recipe-card bg-white rounded-4 p-4"
           style={{
-            maxWidth: "360px",
-            marginTop: "-100px",
-            marginLeft: "50px",
+            width: "360px",
+            position: "absolute",
+            top: "50%",
+            left: "50px",
+            transform: "translateY(-50%)",
             boxShadow: "0 2px 20px rgba(0,0,0,0.1)",
+            zIndex: 1,
           }}
         >
           {/* Recipe Tag */}
