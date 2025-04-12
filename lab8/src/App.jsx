@@ -8,7 +8,7 @@ import RecipeOfDay from "./components/RecipeOfDay";
 import SummerRecipes from "./components/SummerRecipes";
 import VideoRecipes from "./components/VideoRecipes";
 import EditorsPick from "./components/EditorsPick";
-
+import Footer from "./components/Footer";
 function App() {
   return (
     <Router>
@@ -20,6 +20,7 @@ function App() {
           <VideoRecipes />
           <EditorsPick />
         </div>
+        <Footer />
       </div>
     </Router>
   );
